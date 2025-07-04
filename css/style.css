@@ -1,7 +1,7 @@
     /* Global Styles */
     :root {
             --primary-color: #2c3e50;
-            --secondary-color: #3498db;
+            --secondary-color: #1a357a;
             --accent-color: #e74c3c;
             --light-gray: #f8f9fa;
             --dark-gray: #343a40;
@@ -882,7 +882,7 @@
  /* footer css */
  
 .footer {
-  background-color:  #217dbb;
+  background-color:  #1a357a;
 }
 
 .footer .footer-text {
