@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moneycare India - Financial Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/company-logo.png" alt="Moneycare India Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <!-- Main Header Links (always visible) -->
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- Dropdown Example -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="investorCharter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Investor Charter
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Investor Charter Booking</a></li>
+                            <li><a class="dropdown-item" href="#">Investor Charter-Depository</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sub Navigation -->
+    <nav class="sub-navbar navbar navbar-expand-lg navbar-dark bg-primary sub-navbar-fixed">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="investorCharter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Investor Charter
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Investor Charter Booking</a></li>
+                        <li><a class="dropdown-item" href="#">Investor Charter-Depository</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#investor-complaint">Investor Complaint</a></li>
+                <li class="nav-item"><a class="nav-link" href="#back-office">Back Office</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="investorSelection" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Investor Selection
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">SEBI Risk Disclosure</a></li>
+                        <li><a class="dropdown-item" href="#">MITC</a></li>
+                        <li><a class="dropdown-item" href="#">Important Circulars</a></li>
+                        <li><a class="dropdown-item" href="#">Freezing/Blocking Trading</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#e-voting">E-Voting</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section hero-bg-image d-flex align-items-center justify-content-center">
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-10 mx-auto text-start text-white">
+                    <h6 class="fw-bold mb-3" style="letter-spacing:1px; color:fff;">WE’RE MONEYCARE</h6>
+                    <h1 class="display-3 fw-bold mb-4" style="color:#fff; line-height:1.1;">
+                        <span id="typed-headline"></span>
+                    </h1>
+                    <div class="d-flex gap-4 mt-4">
+                        <a href="#" class="btn btn-orange btn-lg px-5">Start Investing</a>
+                        <a href="#" class="btn btn-orange-outline btn-lg px-5">Open an account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <script>
+    // Typing effect for hero headline (single line)
+    document.addEventListener('DOMContentLoaded', function() {
+        const text = "Driver For Your Journey To Create Wealth";
+        const el = document.getElementById('typed-headline');
+        let i = 0;
+        function type() {
+            if (i <= text.length) {
+                el.textContent = text.substring(0, i);
+                i++;
+                setTimeout(type, 50);
+            }
+        }
+        type();
+    });
+    </script>
+
+    <!-- Featured Section: Why Choose Money Care India? -->
+    <section class="featured-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Why Choose Money Care India?</h2>
+                <p class="lead text-muted mb-0">
+                    We are committed to providing exceptional financial services with cutting-edge technology, expert guidance, and unmatched customer support.
+                </p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Card 1: Online KYC -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 h-100 text-center bg-white rounded-4 shadow-sm">
+                        <div class="feature-icon mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                            <i class="fas fa-mobile-alt fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Online KYC</h5>
+                        <p class="text-muted mb-3">Complete your KYC process online with our digital platform. Quick, secure, and hassle-free verification process that saves your time.</p>
+                        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Digital document upload</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Real-time verification</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Secure data handling</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Quick approval process</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 2: Valuable Ideas -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 h-100 text-center bg-white rounded-4 shadow-sm">
+                        <div class="feature-icon mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                            <i class="fas fa-lightbulb fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Valuable Ideas</h5>
+                        <p class="text-muted mb-3">Get expert market insights and investment ideas from our experienced research team. Make informed decisions with our comprehensive analysis.</p>
+                        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Market research reports</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Investment recommendations</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Technical analysis</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Risk assessment</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card 3: Dedicated Support -->
+                <div class="col-md-4">
+                    <div class="feature-card p-4 h-100 text-center bg-white rounded-4 shadow-sm">
+                        <div class="feature-icon mb-3 mx-auto bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center" style="width:60px; height:60px;">
+                            <i class="fas fa-headset fa-2x text-primary"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Dedicated Support</h5>
+                        <p class="text-muted mb-3">Our customer support team is always ready to assist you. Get personalized service and quick resolution to all your queries.</p>
+                        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>24/7 customer support</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Dedicated relationship manager</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Multiple communication channels</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Quick issue resolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section (Modern UI) -->
+    <section class="our-services-section py-5" style="background: linear-gradient(120deg, #1a357a 0%, #3a5ca8 100%); min-height: 500px;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <h6 class="fw-bold text-uppercase mb-2" style="opacity:0.7; letter-spacing:1px;">Our Services</h6>
+                    <h2 class="display-5 fw-bold mb-3">What we bring to you</h2>
+                    <p class="lead mb-0" style="opacity:0.85;">
+                        Get access to stocks, futures, options, non-proprietary mutual funds, forex, ETFs, and more to stay diversified and ready to take advantage of a wider range of opportunities.
+                    </p>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row g-0 rounded-4 overflow-hidden shadow-lg bg-white bg-opacity-10">
+                        <!-- Row 1 -->
+                        <div class="col-md-4 border-bottom border-end border-white border-opacity-25 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-folder-open fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">Financial Consulting</h5>
+                        </div>
+                        <div class="col-md-4 border-bottom border-end border-white border-opacity-25 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-file-invoice-dollar fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">Derivatives Products</h5>
+                        </div>
+                        <div class="col-md-4 border-bottom border-white border-opacity-25 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-chart-line fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">Trades & Stocks</h5>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="col-md-4 border-end border-white border-opacity-25 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-laptop-medical fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">Insurance</h5>
+                        </div>
+                        <div class="col-md-4 border-end border-white border-opacity-25 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-calendar-alt fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">Mutual Fund</h5>
+                        </div>
+                        <div class="col-md-4 p-4 text-center">
+                            <div class="mb-3"><i class="fas fa-file-invoice fa-3x text-white"></i></div>
+                            <h5 class="fw-bold text-white mb-0">IPO</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-end d-lg-none mt-3">
+                    <a href="#" class="text-white fw-bold text-decoration-underline" style="opacity:0.9;">All services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stock Market Section -->
+    <section class="stock-market-section py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold mb-2">Live Stock Market</h2>
+                <p class="text-muted mb-0">Get the latest prices of top Indian stocks in real time.</p>
+            </div>
+            <div class="row justify-content-center" id="stock-market-cards">
+                <!-- Stock cards will be injected here by JS -->
+            </div>
+        </div>
+    </section>
+    <script>
+    // Example using Financial Modeling Prep (no API key needed for demo stocks)
+    const stocks = ['RELIANCE.NSE', 'TCS.NSE', 'INFY.NSE'];
+    const apiUrl = `https://financialmodelingprep.com/api/v3/quote/${stocks.join(',')}?apikey=demo`;
+
+    fetch(apiUrl)
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('stock-market-cards');
+        container.innerHTML = data.map(stock => `
+          <div class="col-md-3 col-6 mb-4">
+            <div class="card shadow-sm border-0 text-center">
+              <div class="card-body">
+                <h5 class="card-title mb-1">${stock.name || stock.symbol}</h5>
+                <div class="mb-2 text-muted" style="font-size:1.1rem;">${stock.symbol}</div>
+                <div class="fw-bold" style="font-size:1.5rem;">₹${stock.price}</div>
+                <div class="${stock.change >= 0 ? 'text-success' : 'text-danger'} fw-bold">
+                  ${stock.change >= 0 ? '+' : ''}${stock.change} (${stock.changesPercentage.toFixed(2)}%)
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      })
+      .catch(() => {
+        document.getElementById('stock-market-cards').innerHTML = '<div class="col-12 text-center text-danger">Unable to load stock data.</div>';
+      });
+    </script>
+
+   
+
+    <!-- Main Footer -->
+    <footer class="main-footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Company Profile</a></li>
+                        <li><a href="#" class="text-light">Our Services</a></li>
+                        <li><a href="#" class="text-light">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Downloads</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Forms</a></li>
+                        <li><a href="#" class="text-light">Documents</a></li>
+                        <li><a href="#" class="text-light">Reports</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Contacts</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                        <li><a href="#" class="text-light">AP Branch Details</a></li>
+                        <li><a href="#" class="text-light">KMP Details</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Step By Step Guide</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Open Account</a></li>
+                        <li><a href="#" class="text-light">Required Documents</a></li>
+                        <li><a href="#" class="text-light">Online Application</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="#" class="text-light mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html> 
