@@ -78,6 +78,14 @@
         color: #fff;
     }
 
+    /* Desktop Hover Dropdowns */
+    @media (min-width: 992px) {
+        .navbar .nav-item.dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; /* Adjust if necessary */
+        }
+    }
+
     /* Responsive Navigation Fixes */
     @media (max-width: 991px) {
         /* Main Navbar Mobile Styles */
