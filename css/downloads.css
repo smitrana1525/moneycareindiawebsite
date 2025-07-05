@@ -1,0 +1,54 @@
+.downloads-section {
+    padding-top: 120px; /* Adjust for fixed navbar */
+}
+
+.downloads-section .accordion-button {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.downloads-section .accordion-button:not(.collapsed) {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.downloads-section .accordion-button:focus {
+    box-shadow: none;
+}
+
+.downloads-section .accordion-body ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.downloads-section .accordion-body li {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.downloads-section .accordion-body li:last-child {
+    border-bottom: none;
+}
+
+.downloads-section .accordion-body a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: color 0.3s ease;
+}
+
+.downloads-section .accordion-body a:hover {
+    color: #e74c3c;
+}
+
+.vernacular-links .btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.vernacular-links .btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
