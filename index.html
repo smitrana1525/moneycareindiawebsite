@@ -24,28 +24,53 @@
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto">
                     <!-- Main Header Links (always visible) -->
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#downloads">Downloads</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <!-- Dropdown Example -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="investorCharter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Investor Charter
+                    <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+   
+
+                    <!-- Sub-navbar items for mobile view -->
+                    <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="investorCornerMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            INVESTOR'S CORNER
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Investor Charter Booking</a></li>
-                            <li><a class="dropdown-item" href="#">Investor Charter-Depository</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="investorCornerMobile">
+                            <li><a class="dropdown-item" href="#">Complaint Data</a></li>
+                            <li><a class="dropdown-item" href="#">Grievance Redressal</a></li>
+                            <li><a class="dropdown-item" href="#">Downloads</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="onlineServicesMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ONLINE SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="onlineServicesMobile">
+                            <li><a class="dropdown-item" href="#">Pay Online</a></li>
+                            <li><a class="dropdown-item" href="#">E-KYC</a></li>
+                            <li><a class="dropdown-item" href="#">Open Account</a></li>
+                            <li><a class="dropdown-item" href="#">Check Application Status</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown d-lg-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="dpServicesMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            DP SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dpServicesMobile">
+                            <li><a class="dropdown-item" href="#">CDSL-SmarT</a></li>
+                            <li><a class="dropdown-item" href="#">CDSL-Easiest</a></li>
+                            <li><a class="dropdown-item" href="#">Freezing/Blocking Trading</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item d-lg-none"><a class="nav-link" href="https://evoting.cdslindia.com/Evoting/EvotingLogin">E-Voting</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Sub Navigation -->
-    <nav class="sub-navbar navbar navbar-expand-lg navbar-dark bg-primary sub-navbar-fixed">
+        <nav class="sub-navbar navbar navbar-expand-lg navbar-dark bg-primary sub-navbar-fixed d-none d-lg-flex">
         <div class="container">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item dropdown">
@@ -70,7 +95,9 @@
                         <li><a class="dropdown-item" href="#">Freezing/Blocking Trading</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#e-voting">E-Voting</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://evoting.cdslindia.com/Evoting/EvotingLogin">E-Voting</a></li>
+
+
             </ul>
         </div>
     </nav>
@@ -174,7 +201,7 @@
     </section>
 
     <!-- Our Services Section (Modern UI) -->
-    <section class="our-services-section py-5" style="background: linear-gradient(120deg, #1a357a 0%, #3a5ca8 100%); min-height: 500px;">
+    <section id="services" class="our-services-section py-5" style="background: linear-gradient(120deg, #1a357a 0%, #3a5ca8 100%); min-height: 500px;">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center text-white">

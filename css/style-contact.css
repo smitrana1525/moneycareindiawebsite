@@ -1,0 +1,199 @@
+/* Google Fonts */
+
+.officer-card {
+    padding: 1rem; /* Adjust padding to make the card smaller */
+}
+
+.officer-card h5 {
+    font-size: 1.1rem; /* Adjust heading font size */
+}
+
+.officer-card p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+    margin-bottom: 0.3rem; /* Reduce space between lines */
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #0A2647 !important;
+}
+
+.contact-header {
+    background: linear-gradient(90deg, #0A2647 0%, #205295 100%);
+    color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.contact-header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.contact-header p {
+    font-size: 1.1rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 600;
+    color: #0A2647;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #205295;
+    margin: 8px auto 0;
+}
+
+.contact-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 2rem;
+    padding: 2rem; /* Increased padding */
+    height: 100%;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.contact-card .card-title {
+    font-weight: 600;
+    color: #0A2647;
+    font-size: 1.25rem; /* Increased font size */
+}
+
+.contact-card .card-subtitle {
+    color: #1C3F6E;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contact-card .card-text {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 0.75rem; /* Slightly reduced margin */
+}
+
+.contact-card .card-text i {
+    color: #205295;
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+    margin-top: 0.2em; /* Better vertical alignment */
+}
+
+.contact-card .card-text span {
+    overflow-wrap: break-word; /* More natural word wrapping */
+    min-width: 0; /* Flexbox fix for long content */
+}
+
+.office-address-group,
+.inquiry-form-section {
+    height: 100%; /* Ensure containers match height */
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    border-color: #205295;
+    box-shadow: 0 0 0 0.25rem rgba(32, 82, 149, 0.25);
+}
+
+.btn-primary {
+    background-color: #205295;
+    border-color: #205295;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #1C3F6E;
+    border-color: #1C3F6E;
+}
+
+.office-address {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.office-address i {
+    font-size: 2.5rem;
+    color: #205295;
+    margin-bottom: 1rem;
+}
+
+.office-address h4 {
+    font-weight: 600;
+    color: #0A2647;
+    font-size: 1.25rem; /* Adjust font size */
+}
+
+.office-address p {
+    word-wrap: break-word; /* Ensure long addresses wrap */
+}
+
+.office-address-group .office-address {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.office-address-group .office-address:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #0A2647;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
