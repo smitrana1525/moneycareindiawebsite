@@ -248,7 +248,7 @@
         z-index: 2;
     }
 
-    #typed-headline-1, #typed-headline-2 {
+    #typed-headline {
         font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
         font-weight: 800;
         color: #fff;
@@ -310,15 +310,15 @@
             min-height: 350px;
             background-position: center center;
         }
-        #typed-headline-1, #typed-headline-2 {
+        #typed-headline {
             font-size: 2.2rem;
         }
         .hero-section h6 {
             font-size: 1rem;
         }
-        .btn-lg {
-            font-size: 1rem;
-            padding: 0.7rem 2rem;
+        .hero-section .btn {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.5rem !important;
         }
     }
 
@@ -328,15 +328,15 @@
             min-height: 220px;
             background-position: center center;
         }
-        #typed-headline-1, #typed-headline-2 {
+        #typed-headline {
             font-size: 1.3rem;
         }
         .hero-section h6 {
             font-size: 0.9rem;
         }
-        .btn-lg {
-            font-size: 0.95rem;
-            padding: 0.6rem 1.2rem;
+        .hero-section .btn {
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem !important;
         }
     }
 
@@ -574,7 +574,15 @@
         }
         
         .footer {
-            text-align: center;
+            text-align: left;
+        }
+
+        .footer h6 {
+            padding-top: 1rem;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline !important;
         }
         
         .footer h5 {
@@ -897,7 +905,7 @@
 
 .footer a {
   text-decoration: none;
-}
+}   
 
 .footer a:hover {
   text-decoration: underline;
@@ -905,4 +913,13 @@
 
 .footer-bottom {
   background-color: #1c1a57;
+}
+
+/* Fix for header gap on mobile */
+@media (max-width: 991.98px) {
+  body {
+    /* This value should match the height of your main navigation bar.
+       You may need to adjust it slightly. */
+    padding-top: 70px !important;
+  }
 }
